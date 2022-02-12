@@ -19,7 +19,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.rowHeight = 186
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
